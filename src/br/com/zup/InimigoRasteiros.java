@@ -1,11 +1,13 @@
 package br.com.zup;
 
-public class InimigoRasteiros {
+public class InimigoRasteiros extends Inimigo{
     private double danosEspinhos;
 
-    public InimigoRasteiros(double danosEspinhos) {
+    public InimigoRasteiros(String nome, double vida, double danosEspinhos) {
+        super(nome, vida);
         this.danosEspinhos = danosEspinhos;
     }
+
 
     public double getDanosEspinhos() {
         return danosEspinhos;
