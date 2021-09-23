@@ -2,11 +2,11 @@ package br.com.zup;
 
 public class Heroi {
     private String nome;
-    private double poderMagico;
+    private double vida;
 
     public Heroi(String nome, double poderMagico) {
         this.nome = nome;
-        this.poderMagico = poderMagico;
+        this.vida = poderMagico;
     }
 
     public String getNome() {
@@ -18,10 +18,14 @@ public class Heroi {
     }
 
     public double getPoderMagico() {
-        return poderMagico;
+        return vida;
     }
 
     public void setPoderMagico(double poderMagico) {
-        this.poderMagico = poderMagico;
+        this.vida = poderMagico;
     }
+    public void trocarNome(String nome){
+        this.nome= nome;
+    }
+    public void receberDano()
 }

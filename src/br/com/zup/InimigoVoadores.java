@@ -15,4 +15,8 @@ public class InimigoVoadores extends Inimigo {
     public void setDanoTiro(double danoTiro) {
         this.danoTiro = danoTiro;
     }
+    public double poderDano(){
+        return danoTiro;
+
+    }
 }
