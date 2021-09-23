@@ -3,8 +3,8 @@ package br.com.zup;
 public class Guerreiro extends Heroi {
     private double poderAtaque;
 
-    public Guerreiro(String nome, double poderMagico, double poderAtaque) {
-        super(nome, poderMagico);
+    public Guerreiro(String nome, double vida, double poderAtaque) {
+        super(nome, vida);
         this.poderAtaque = poderAtaque;
     }
 
@@ -14,5 +14,8 @@ public class Guerreiro extends Heroi {
 
     public void setPoderAtaque(double poderAtaque) {
         this.poderAtaque = poderAtaque;
+    }
+    public double aplicarDano(){
+        return poderAtaque;
     }
 }
