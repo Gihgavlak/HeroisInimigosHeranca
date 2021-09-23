@@ -27,5 +27,10 @@ public class Heroi {
     public void trocarNome(String nome){
         this.nome= nome;
     }
-    public void receberDano()
+    public void receberDano(double dano){
+        this.vida = this.vida - dano;
+    }
+    public double exibirVida(){
+        return this.vida;
+    }
 }
