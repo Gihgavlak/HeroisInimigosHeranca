@@ -3,9 +3,9 @@ package br.com.zup;
 public class Mago extends Heroi{
     private double poderMagico;
 
-    public Mago(String nome, double poderMagico, double poderMagico1) {
-        super(nome, poderMagico);
-        this.poderMagico = poderMagico1;
+    public Mago(String nome, double vida, double poderMagico) {
+        super(nome, vida);
+        this.poderMagico = poderMagico;
     }
 
     public double getPoderMagico() {
@@ -14,5 +14,8 @@ public class Mago extends Heroi{
 
     public void setPoderMagico(double poderMagico) {
         this.poderMagico = poderMagico;
+    }
+    public double aplicarMagia(){
+        return poderMagico;
     }
 }
