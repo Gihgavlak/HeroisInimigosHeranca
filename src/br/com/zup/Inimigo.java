@@ -24,4 +24,16 @@ public class Inimigo {
     public void setVida(double vida) {
         this.vida = vida;
     }
+
+    public void trocarNome(String nome) {
+        setNome(nome);
+    }
+
+    public void receberDano(double dano) {
+        setVida(this.vida - dano);
+    }
+
+    public double exibirVida() {
+        return this.vida;
+    }
 }
