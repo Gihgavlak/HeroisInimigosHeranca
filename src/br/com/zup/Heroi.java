@@ -4,9 +4,9 @@ public class Heroi {
     private String nome;
     private double vida;
 
-    public Heroi(String nome, double poderMagico) {
+    public Heroi(String nome, double vida) {
         this.nome = nome;
-        this.vida = poderMagico;
+        this.vida = vida;
     }
 
     public String getNome() {
@@ -17,20 +17,23 @@ public class Heroi {
         this.nome = nome;
     }
 
-    public double getPoderMagico() {
+    public double getVida() {
         return vida;
     }
 
-    public void setPoderMagico(double poderMagico) {
-        this.vida = poderMagico;
+    public void setVida(double vida) {
+        this.vida = vida;
     }
-    public void trocarNome(String nome){
-        this.nome= nome;
+
+    public void trocarNome(String nome) {
+        setNome(nome);
     }
-    public void receberDano(double dano){
-        this.vida = this.vida - dano;
+
+    public void receberDano(double dano) {
+        setVida(this.vida - dano);
     }
-    public double exibirVida(){
+
+    public double exibirVida() {
         return this.vida;
     }
 }
