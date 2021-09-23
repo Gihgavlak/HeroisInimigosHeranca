@@ -16,4 +16,7 @@ public class InimigoRasteiros extends Inimigo{
     public void setDanosEspinhos(double danosEspinhos) {
         this.danosEspinhos = danosEspinhos;
     }
+    public double aplicarDano(){
+        return danosEspinhos;
+    }
 }
